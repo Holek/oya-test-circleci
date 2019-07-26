@@ -1,6 +1,6 @@
 Project: test-circleci
 Require:
-  github.com/tooploox/oya-packs/circleci: v0.0.7
+  github.com/tooploox/oya-packs/circleci: v0.0.8
 Import:
   circleci: github.com/tooploox/oya-packs/circleci
 
