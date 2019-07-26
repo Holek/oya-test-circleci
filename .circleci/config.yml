@@ -4,11 +4,11 @@ defaults: &defaults
     - image: circleci/ruby:2.5-node-browsers
       environment:
       
-        HUE: heu
+        OYA_VER: "oya version v0.0.15"
       
-        MEH: 🤷🍆
+        HUE: "heu"
       
-        OYA_VER: oya version v0.0.15
+        MEH: "🤷🍆"
       
 
 version: 2
@@ -19,7 +19,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/oya-project
-      - run: wget https://github.com/mozilla/sops/releases/download/3.3.1/sops_3.3.1_amd64.deb && dpkg -i sops_3.3.1_amd64.deb
+      - run: wget https://github.com/mozilla/sops/releases/download/3.3.1/sops_3.3.1_amd64.deb && sudo dpkg -i sops_3.3.1_amd64.deb
       - run: curl https://oya.sh/get | bash
       - persist_to_workspace:
           root: .
