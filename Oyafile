@@ -1,0 +1,12 @@
+Project: test-circleci
+Require:
+  github.com/tooploox/oya-packs/circleci: v0.0.5
+Import:
+  circleci: github.com/tooploox/oya-packs/circleci
+
+
+Values:
+  circleci:
+    env:
+      hue: heu
+      meh: 🤷🍆
